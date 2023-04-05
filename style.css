@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+  
+.nav{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-right: 2em;
+    padding-left: 1em;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list .list-item{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover{
+   color: blue;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+   height: 50px;
+   
+}
+span.title{
+    font-family: math;
+    font-size: 23px;
+    color: blue;
+    padding-left: .5em ;
+}
+
+.content{
+    height: 100%;
+    padding-top: 1%;
+}
+
+.bg-Color{
+    position: relative;
+    height: 15rem;
+    left: 200px;
+    background-color:ghostwhite ;
+}
+/* .bg-grey{
+    background-color: ghostwhite;
+    content: '';
+    width: 80em;
+    height: 30em;
+    margin-left: 12em;
+} */
+
+.yellow-bg{
+    position: relative;
+    content: '';
+    width: 60em;
+    height: 20em;
+    background: linear-gradient(to left, #ffd300,#fff601);
+    left: 20px;
+    top: -150px;
+}
+.text-content{
+    position: absolute;
+    top: 150px;
+    left: 60%;
+    background-color: white;
+    padding: 2em;
+    padding-left: 5rem;
+    width: 30rem;
+}
+
+.text-main{
+    color: #2f5657;
+    font-size: 2em;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub-text{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+@media all and (max-width:840px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav-list{
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px ;
+        display : none;
+    }
+    .nav-list .list-item{
+        display: block;
+        padding: 10px;
+        border-top: 1px solid grey;
+    }
+    
+    .title{
+        display: none;
+    }
+    .logo{
+        height: 50px;
+        margin-left : 10px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        display:block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .text-content{
+        width: 200px;
+        position: absolute;
+        top: 10px;
+        left: 400px;
+        background-color: white;
+        width: fit-content;
+        /* height: auto; */
+        margin-left: 5%;
+        margin-right: 5%;
+         margin-top: 0%;
+    }
+
+    .bg-grey{
+        margin-left: 0;
+    }
+    .yellow-bg{
+        position: relative;
+        width: inherit;
+        height: auto;
+        top: 20px;
+    }
+
+    .active{
+        display: block;
+    }
+}

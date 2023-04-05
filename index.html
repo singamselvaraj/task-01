@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantum Projects</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- nav bar -->
+    <div class="nav">
+        <div class="logo-title">
+            <img class="logo" src="t.png" alt="logo" />
+            <span class="title">TANTUM PROJECTS</span>
+        </div>
+        <ul class="nav-list" id ="navList">
+            <li class="list-item"><a href="#">HOME</a></li>
+            <li class="list-item"><a href="#">ABOUT US</a></li>
+            <li class="list-item"><a href="#">WHAT WE DO</a></li>
+            <li class="list-item"><a href="#">PROJECTS</a></li>
+            <li class="list-item"><a href="#">BLOGS</a></li>
+            <li class="list-item"><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="menu" id ="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </div>
+
+    <!-- body content -->
+    <div class="content">
+        <div class="bg-grey">
+            <div class="bg-Color"></div>
+            <div class="yellow-bg" >
+                <img src="home_pic.png" alt="">
+                <div class="text-content">
+                    <div class="text-main">Throw Your First <br>Bommerang Today,<br>and Prepare to <br>Catch the Profits</div>
+                    <div class="sub-text">Exclusive properties deals that are not are <br> not available through traditional means.Unlock today!!!</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    const toggleButton = document.getElementById("toggleButton");
+    const navList = document.getElementById("navList");
+    toggleButton.addEventListener('click',()=>{
+        navList.classList.toggle('active');
+    })
+</script>
+</html>
